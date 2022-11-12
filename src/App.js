@@ -18,14 +18,7 @@ function App() {
       setAlert(null);
     }, 1300);
   };
-  // const removeBodyClasses = () => {
-  //   document.body.classList.remove("bg-light");
-  //   document.body.classList.remove("bg-dark");
-  //   document.body.classList.remove("bg-danger");
-  //   document.body.classList.remove("bg-success");
-  //   document.body.classList.remove("bg-warning");
-  //   document.body.classList.remove("bg-primary");
-  // }
+  
   const toggleMode = () => {
     // removeBodyClasses();
     // document.body.classList.add("bg-" + cls);
@@ -50,12 +43,12 @@ function App() {
           <Routes>
             <Route
               exact
-              path="/textutils/about"
+              path="/TextUtils/about"
               element={<About mode={mode} />}
             ></Route>
             <Route
               exact
-              path="/textutils"
+              path="/TextUtils"
               element={
                 <TextForm
                   showAlert={showAlert}
